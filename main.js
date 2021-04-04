@@ -86,8 +86,8 @@ async function tableUsers() {
 
 }
 function showForm() {
-    mainDiv.innerHTML = '';
-    tableDiv.innerHTML = ''
+    mainDiv.style.display = 'none';
+    tableDiv.style.display = 'none'
     form.style.display = 'block'
 
 
