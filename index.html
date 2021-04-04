@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="buttons">
+      <div class="btn"><button id="button1" onclick="tableUsers()">Show in table list</button></div> 
+      <div class="btn"><button id="button2" onclick="showForm()">Register</button></div> 
+      <div class="btn"><button id="button3" onclick="getShowUsers()">Main menu</button></div>
+    </div>
+
+    <div id="mainDiv"></div>
+    <div id="tableDiv"></div>
+    
+
+    <div id="form">
+        <!-- <form> -->
+            <lable>First Name:
+                <input id=fName type="text">
+            </lable>
+            <br>
+            <lable>Last Name:
+                <input id="lName" type="text">
+            </lable>
+            <br>
+            <lable>Email:
+                <input id="formEmail" type="email">
+            </lable>
+            <br>
+            <lable>Valid Email:
+                <input id="formValidEmail" type="email" >
+            </lable>
+            <br>
+            <lable>Age:
+                <input id="age" type="number" onclick="emailValidation(formEmail.value,formValidEmail.value)" on>
+            </lable>
+            <br>
+            <lable>Image:
+                <input id="image" type="image">
+            </lable>
+            <button id="sendBtn" type="submit" onclick="createUser(fName.value,lName.value,formEmail.value,age.value)">Send</button>
+        <!-- </form> -->
+    </div>
+
+
+    <script src="./main.js">
+
+    </script>
+    
+
+
+</body>
+
+</html>
