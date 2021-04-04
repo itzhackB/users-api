@@ -15,6 +15,8 @@ function getUserPage(userId) {
 let result = [];
  async function getShowUsers() {
     form.style.display = 'none'
+    tableDiv.style.display='none'
+    mainDiv.style.display='grid'
 
     try {
         result = await showUsers();
@@ -28,15 +30,6 @@ let result = [];
                  <p>${usersItem.phone}</p>
                  <p><button class=button id=btn${usersItem.index} >Contact</button></p>
                  </div>`
-
-            var linksArray = document.getElementsByClassName("userProfil")
-
-
-            for (let i = 0; i < linksArray.length; i++) {
-                linksArray[i].setAttribute("href", "user.html")
-            };
-
-
 
         });
     }
@@ -54,12 +47,10 @@ function showUserDetails() {
     alert("hi")
 }
 
-
-console.log(buttonArray);
-
 async function tableUsers() {
     mainDiv.style.display = 'none';
-    form.style.display = 'none'
+    form.style.display = 'none';
+    tableDiv.style.display='block';
     try {
         result = await showUsers();
         console.log(result);
