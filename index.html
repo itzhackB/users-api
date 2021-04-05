@@ -10,50 +10,87 @@
 </head>
 
 <body>
+
+    <header id="header-wrapper">
+        <div id="header">
+            <img src="./טק קריירה.jfif" alt="" width="300px">
+        </div>
+    </header>
     <div id="buttons">
-      <div class="btn"><button id="button1" onclick="tableUsers()">Show in table list</button></div> 
-      <div class="btn"><button id="button2" onclick="showForm()">Register</button></div> 
-      <div class="btn"><button id="button3" onclick="getShowUsers()">Main menu</button></div>
+        <div class="btn"><button id="button1" onclick="tableUsers()">Show in table list</button></div>
+        <div class="btn"><button id="button2" onclick="showForm()">Register</button></div>
+        <div class="btn"><button id="button3" onclick="getShowUsers()">Main menu</button></div>
     </div>
 
     <div id="mainDiv"></div>
     <div id="tableDiv"></div>
-    
+
 
     <div id="form">
         <!-- <form> -->
-            <lable>First Name:
-                <input id=fName type="text">
-            </lable>
-            <br>
-            <lable>Last Name:
-                <input id="lName" type="text">
-            </lable>
-            <br>
-            <lable>Email:
-                <input id="formEmail" type="email">
-            </lable>
-            <br>
-            <lable>Valid Email:
-                <input id="formValidEmail" type="email" >
-            </lable>
-            <br>
-            <lable>Age:
-                <input id="age" type="number" onclick="emailValidation(formEmail.value,formValidEmail.value)" on>
-            </lable>
-            <br>
-            <lable>Image:
-                <input id="image" type="image">
-            </lable>
-            <button id="sendBtn" type="submit" onclick="createUser(fName.value,lName.value,formEmail.value,age.value)">Send</button>
+        <lable>First Name:
+            <input id=fName type="text">
+        </lable>
+        <br>
+        <lable>Last Name:
+            <input id="lName" type="text">
+        </lable>
+        <br>
+        <lable>Email:
+            <input id="formEmail" type="email">
+        </lable>
+        <br>
+        <lable>Valid Email:
+            <input id="formValidEmail" type="email">
+        </lable>
+        <br>
+        <lable>Age:
+            <input id="age" type="number" onclick="emailValidation(formEmail.value,formValidEmail.value)" on>
+        </lable>
+        <br>
+        <lable>Image:
+            <input id="image" type="image">
+        </lable>
+        <button id="sendBtn" type="submit"
+            onclick="createUser(fName.value,lName.value,formEmail.value,age.value)">Send</button>
         <!-- </form> -->
     </div>
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="social-wrapper">
+            <ul>
+                <li>
+                    <a href='https://www.instagram.com/itzhak.baynesai/' target="_blank">
+                        <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo"
+                            class="instagram-icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/itzhack-bynesai-8a8759206/" target="_blank">
+                        <img src="https://www.seekpng.com/png/detail/8-84419_linkedin-logo-png-icon-linkedin-logo-png.png"
+                            alt="Linkedin Logo" class="linkedin-icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/yzik9090/" target="_blank">
+                        <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico"
+                            alt="Facebook Logo" class="facebook-icon"></a>
+                </li>
+
+            </ul>
+        </div>
+
+        <nav class="footer-nav" role="navigation">
+            <p>Copyright
+
+            </p>
+        </nav>
+    </footer>
+    <!-- #colophon -->
 
 
     <script src="./main.js">
 
     </script>
-    
+
 
 
 </body>

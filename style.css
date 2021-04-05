@@ -13,6 +13,7 @@
     text-align: center;
     font-family: arial;
     grid-area: 'main';
+    border: 1px black solid;
   }
 .title {
     color: grey;
@@ -30,7 +31,7 @@
     width: 100%;
     font-size: 18px;
 }
-#button1,#button2{
+#button1,#button2,#button3{
     border: none;
     outline: 0;
     color: white;
@@ -40,6 +41,7 @@
     font-size: 18px;
 
 }
+
 
 table, th, td {
     border: 1px solid black; 
@@ -93,3 +95,62 @@ input, select {
     padding: 5px;
   }
 
+  .site-footer {
+    background-color: #838383;
+    text-align: center;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+  
+  #social-wrapper {
+    text-align:center;
+  }
+  
+  /*Social Media Icons*/
+  .social-wrapper {
+    text-align: center;
+    
+  }
+  
+  .social-wrapper ul li {
+    display: inline;
+    
+  }
+
+  ul{
+    margin-top: -5px
+  }
+  
+  
+  .facebook-icon,
+  .instagram-icon,
+  .linkedin-icon
+ {
+    margin-top: 0px;
+    width: 40px;
+    height: 40px;
+    opacity: .6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    border-radius: 25px;
+  }
+  
+  
+  .facebook-icon:hover,
+  .instagram-icon:hover,
+  .linkedin-icon:hover
+  {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+  }
+  
+  .footer-nav p {
+    text-align: center;
+  }
+  #colophon{
+    position: fixed;
+    height: 10px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 30px;
+  }
